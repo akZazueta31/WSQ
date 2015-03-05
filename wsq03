@@ -1,0 +1,16 @@
+#Ana Karen Zazueta Pimentel
+#A01630485
+print ("Fun with numbers")
+num1 = int (input("Enter a number: "))
+num2 = int (input("Enter another number: "))
+su = num1+num2
+dif = num1-num2
+pro = num1*num2
+div = num1/num2
+rem = num1%num2
+print ("The sum of both numbers: ", su)
+print ("The difference of both numbers: ", dif)
+print ("The product of both numbers: ", pro)
+print ("The integer division: ", div)
+print ("The remainder of integer division: ", rem)
+print ("Have a nice day!")
