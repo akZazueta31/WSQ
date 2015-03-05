@@ -1,0 +1,10 @@
+#Ana Karen Zazueta Pimentel
+#A01630485
+print ("Temperature")
+fahr = int(input("What is the temperature in Fahrenheit? "))
+cel = int(5*(fahr-32)/9)
+print ("A temperature of ", fahr, " degrees Fahrenheit is ", cel, " in Celcius")
+if (cel<100):
+	print ("Water does not boil at this temperature")
+else:
+	print ("Water boils at this temperature")
