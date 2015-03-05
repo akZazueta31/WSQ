@@ -1,0 +1,31 @@
+#Ana Karen Zazueta Pimentel
+#A01630485
+def summ (num1,num2):
+	su = num1 + num2
+	return su
+def dif (num1,num2):
+	di = num1 - num2
+	return di
+def pro (num1,num2):
+	pr = num1 * num2
+	return pr
+def divs (num1,num2):
+	div = num1 / num2
+	return div
+def res (num1,num2):
+	re = num1 % num2
+	return re
+print("On to function")
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+a = summ(num1,num2)
+b = dif(num1,num2)
+c = pro(num1,num2)
+d = divs(num1,num2)
+e = res(num1,num2)
+print ("The sum of both numbers: ", a)
+print ("The difference of both numbers: ", b)
+print ("The product of both numbers: ", c)
+print ("The integer division: ", d)
+print ("The remainder of integer division: ", e)
+print ("Have a nice day!")
