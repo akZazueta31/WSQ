@@ -1,0 +1,11 @@
+#Ana Karen Zazueta Pimentel
+#A01630485
+print("Sum of Numbers")
+num1 = int(input("Give me the lower bound: "))
+num2 = int(input("Give me the upper bound: "))
+sum = num1
+count = num1
+while (count < num2):
+	count = count+1
+	sum = sum+count
+print("The sum from ", num1, " to ", num2, " is: ", sum)
