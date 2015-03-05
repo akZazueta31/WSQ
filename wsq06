@@ -1,0 +1,20 @@
+#Ana Karen Zazueta Pimentel
+#A01630485
+print ("Pick a number")
+from random import randrange
+numrand = randrange(1,100)
+cont = 0
+fin = 0
+while (fin != 1):
+	num = int(input("Give me a number between 1 and 100: "))
+	if (num>numrand):
+		print("Sorry, ", num, " is too high, try again: ")
+		cont = cont+1
+	else:
+		if (num<numrand):
+			print("Sorry, ", num, " is too low, try again: ")
+			cont = cont + 1
+		else: 
+			print("Correct! ", num, "is the correct number!")
+			fin = fin+1
+print("You made ", cont, " guesses to get the right number")
