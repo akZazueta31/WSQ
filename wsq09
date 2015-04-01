@@ -1,0 +1,19 @@
+#Ana Karen Zazueta Pimentel
+#A01630485
+def factorial(n):
+	x=n
+	y=1
+	while (x>1):
+		y = y*x
+		x = x-1
+	return y
+print("Factorial Calculator")
+ans="y"
+while(ans=="y"):
+	n=int(input("Give me a positive number: "))
+	f= factorial(n)
+	if(n>1):
+		print("The factorial of ", n, " is ",f)
+		ans=str(input("Do you want to try another number? "))
+	else:
+		print("Please, give me a positive number: ")
