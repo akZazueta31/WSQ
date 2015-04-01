@@ -1,0 +1,15 @@
+#Ana Karen Zazueta Pimentel
+#A01630485
+def euclides(num1,num2):
+	if(num1==num2):
+		ans=num1
+	elif(num1>num2):
+		ans= euclides((num1-num2),num2)
+	else:
+		ans= euclidel(num1,(num2-num1))
+	return ans
+print("Greatest Common Divisor")
+num1=int(input("Give me a number: "))
+num2=int(input("Give me a number: "))
+gcd= euclides(num1,num2)
+print("The Greatest Common Divisor is: ", gcd)
