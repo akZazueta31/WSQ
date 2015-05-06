@@ -1,0 +1,35 @@
+#Ana Karen Zazueta Pimentel
+#A01630485
+
+#primero abrimos el archivo declarandolo en una variable, indicar la ubicacion de este
+x= open(r"/Users/WildWolfYinumi/Desktop/93cars.dat.txt")
+
+#ahora creamos la una funcion con la variable x (el archivo)
+def price(x):
+	#declaramos variables y un contador
+	contador= 0
+	mp=0
+	cp=0
+	hp=0
+	#hacemos un loop
+	for line in x:
+		if (contador%2 ==0):
+			#transformamos string a float
+			mdp= float(line[42:46])
+			mp= mp+mdp
+			ctp= float(line[52:54])
+			cp= cp+ctp
+			hgp= float(line[55:57])
+		contador= contador+1
+		autos= contador/2
+		#escribimos las operaciones
+		x= mp/autos
+		y= cp/autos
+		z= hp/autos
+	return (x,y,z)
+
+#las respuestas
+(x,y,z)= price(x)
+print("Avarage midrange price: ", x)
+print("Avarage gas mileage in city: ", y)
+print("Avarage gas mileage on highway: ", z)
